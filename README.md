@@ -1,10 +1,18 @@
 # survstak
 
-survstack is a Python implementation of the survival stacking
-method proposed in [*Survival stacking: casting survival
-analysis as a classification problem* by Erin Craig,
-Chenyang Zhong, and Robert Tibshirani (2021)][ssref]. The package
-offers both an OO and functional interface.
+**survstack** is a Python package implementing the survival stacking
+method originally proposed in [*Survival stacking: casting survival
+analysis as a classification problem* (2021)][ssref] and extended
+in [*A review of survival stacking: a method to cast survival regression 
+analysis as a classification problem* (2025)][ssref2] by Erin Craig,
+Chenyang Zhong, and Robert Tibshirani.
+
+**survstack** transforms time-to-event data into a stacked tabular 
+format, replicating each sample’s covariates across relevant time points, 
+enabling survival analysis standard classification algorithms. It supports 
+discrete-time encoding (one-hot interval indicators) and continuous-time encoding 
+(parametric time features), letting you choose the representation that 
+best captures your hazard dynamics.
 
 ## Installation
 ```
@@ -44,4 +52,5 @@ single column. The number of rows increases with respect to the
 number of samples still under observation at each time-point.
 
 [ssref]: https://doi.org/10.48550/arXiv.2107.13480
+[ssref2]: https://doi.org/10.1515/ijb-2022-0055
 [sksurv]: https://scikit-survival.readthedocs.io/en/stable/
