@@ -1,4 +1,4 @@
-# survstak
+# survstack
 
 **survstack** is a Python package implementing the survival stacking
 method originally proposed in [*Survival stacking: casting survival
