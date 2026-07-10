@@ -128,7 +128,7 @@ def _encode_onehot(times: np.ndarray, n_samples: int) -> np.ndarray:
     return np.tile(np.eye(times.shape[0]), (n_samples, 1))
 
 
-def _encode_continuous(times: np.ndarray, n_samples: int, normalize: bool = True) -> np.ndarray:
+def _encode_continuous(times: np.ndarray, n_samples: int, normalize: bool = False) -> np.ndarray:
     """Tile a (optionally normalized) time vector for continuous time encoding."""
     if normalize:
         times = times / times[-1]
