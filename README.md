@@ -10,13 +10,12 @@ Chenyang Zhong, and Robert Tibshirani.
 **survstack** transforms time-to-event data into a stacked tabular 
 format, replicating each sample’s covariates across relevant time points, 
 enabling survival analysis standard classification algorithms. It supports 
-discrete-time encoding (one-hot interval indicators) and continuous-time encoding 
-(parametric time features), letting you choose the representation that 
-best captures your hazard dynamics.
+discrete-time encoding as either training set risk set features (one-hot interval indicators) and input feature encoding 
+(parametric time features). 
 
 ## Installation
 ```
-pip install git+https://github.com/kaboroevich/survstack.git#egg=survstack
+pip install git+https://github.com/marcoBmota8/survstack.git#egg=survstack
 ```
 
 ## SurvivalStacker Class
