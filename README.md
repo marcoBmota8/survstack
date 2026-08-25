@@ -1,5 +1,7 @@
 # survstack
 
+This is a forked version with significant changes from https://github.com/kaboroevich/survstack
+
 **survstack** is a Python package implementing the survival stacking
 method originally proposed in [*Survival stacking: casting survival
 analysis as a classification problem* (2021)][ssref] and extended
